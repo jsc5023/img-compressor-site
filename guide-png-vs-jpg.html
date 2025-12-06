@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>PNG와 JPG 차이 - 언제 어떤 형식을 써야 할까?</title>
+    <meta
+      name="description"
+      content="PNG와 JPG 이미지 형식의 차이와, 어떤 상황에서 어떤 형식을 선택해야 하는지 정리했습니다. 블로그, 쇼핑몰, 웹페이지에 적합한 이미지 최적화 방법을 알아보세요."
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <h1>PNG와 JPG 차이 — 언제 어떤 형식을 써야 할까?</h1>
+      <p class="subtitle">
+        두 형식의 차이를 알면 화질과 용량을 모두 최적화할 수 있습니다.
+      </p>
+    </header>
+
+    <main class="container">
+      <!-- 1. PNG 특징 -->
+      <section class="card">
+        <h2>1. PNG 특징</h2>
+        <p>
+          PNG는 <strong>무손실 압축</strong>을 사용하는 이미지 형식입니다. 원본
+          정보를 유지한 채 저장되기 때문에 화질 손실이 거의 없다는 장점이
+          있습니다.
+        </p>
+        <ul>
+          <li>무손실 압축 → 화질 손실 없음</li>
+          <li>투명 배경(알파 채널) 지원</li>
+          <li>스크린샷, 로고, UI 이미지에 적합</li>
+          <li>JPG보다 용량이 큼</li>
+        </ul>
+      </section>
+
+      <!-- 2. JPG 특징 -->
+      <section class="card">
+        <h2>2. JPG 특징</h2>
+        <p>
+          JPG는 <strong>손실 압축</strong>을 사용하는 이미지 형식으로, 불필요한
+          정보를 줄여 용량을 효율적으로 줄입니다. 그래서 사진·풍경·인물
+          이미지처럼 색감이 복잡한 이미지에 가장 널리 사용됩니다.
+        </p>
+        <ul>
+          <li>손실 압축 → 매우 작은 용량으로 저장 가능</li>
+          <li>사진·풍경·인물 이미지에 최적화</li>
+          <li>투명 배경 미지원</li>
+          <li>압축을 과하게 하면 화질 저하 발생</li>
+        </ul>
+      </section>
+
+      <!-- 3. 선택 기준 -->
+      <section class="card">
+        <h2>3. 어떤 상황에서 어떤 형식을 사용해야 할까?</h2>
+        <ul>
+          <li><strong>사진(인물/풍경)</strong> → JPG 추천</li>
+          <li><strong>글자·로고·UI 요소</strong> → PNG 추천</li>
+          <li><strong>투명 배경 필요</strong> → 반드시 PNG</li>
+          <li>
+            <strong>블로그·쇼핑몰 이미지</strong> → JPG 압축 시 용량 크게 감소
+          </li>
+        </ul>
+        <p>
+          특히 사진이 PNG로 저장되어 있다면, JPG로 변환만 해도 용량이
+          <strong>5~10배 줄어드는 경우</strong>가 많습니다.
+        </p>
+      </section>
+
+      <!-- 4. 요약 -->
+      <section class="card">
+        <h2>4. 정리</h2>
+        <p>간단하게 정리하면 다음과 같습니다:</p>
+        <ul>
+          <li>PNG = 고품질, 투명 배경, 로고/아이콘/텍스트에 적합</li>
+          <li>JPG = 사진, 웹 최적화, 용량을 줄여야 할 때 사용</li>
+        </ul>
+        <p>
+          상황에 맞게 형식을 선택하면
+          <strong>화질과 용량을 모두 잡는 이미지 관리</strong>가 가능합니다.
+        </p>
+        <p>👉 <a href="./index.html">이미지 압축기로 돌아가기</a></p>
+      </section>
+    </main>
+
+    <footer class="footer">© 2025 무료 이미지 압축 도구</footer>
+  </body>
+</html>

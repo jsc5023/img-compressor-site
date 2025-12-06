@@ -1,0 +1,276 @@
+/* 기본 설정 */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
+}
+
+body {
+  background: #f5f5f5;
+  color: #222;
+  line-height: 1.5;
+}
+
+/* 헤더 */
+.header {
+  text-align: center;
+  padding: 28px 12px 16px;
+}
+
+.header h1 {
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.subtitle {
+  font-size: 14px;
+  color: #555;
+}
+
+/* 전체 컨테이너 (툴 + 가이드 공통) */
+.container {
+  max-width: 840px;
+  margin: 0 auto;
+  padding: 0 16px 48px;
+  display: flex;
+  flex-direction: column;
+  gap: 22px; /* 카드 사이 간격 */
+}
+
+/* 카드 UI (툴/가이드 공통) */
+.card {
+  background: #ffffff;
+  padding: 22px 24px;
+  border-radius: 16px;
+  box-shadow: 0 6px 18px rgba(15, 23, 42, 0.06);
+}
+
+.card h2 {
+  font-size: 18px;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+/* 카드 내부 텍스트 기본 */
+.card p {
+  font-size: 15px;
+  line-height: 1.7;
+  margin-top: 4px;
+}
+
+/* 카드 내부 리스트 기본 */
+.card ul {
+  margin-top: 10px;
+  padding-left: 20px;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.card li + li {
+  margin-top: 4px;
+}
+
+/* 업로드 버튼 */
+.upload-btn {
+  display: inline-block;
+  padding: 10px 16px;
+  background: #2563eb;
+  color: white;
+  font-size: 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 8px;
+  font-weight: 600;
+}
+
+.upload-btn input {
+  display: none;
+}
+
+/* 드래그존 */
+.drop-zone {
+  margin-top: 14px;
+  padding: 24px;
+  border: 2px dashed #ccc;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 14px;
+  color: #555;
+  background: #fafafa;
+  transition: 0.2s;
+}
+
+.drop-zone.dragover {
+  background: #eaf0ff;
+  border-color: #2563eb;
+  color: #2563eb;
+}
+
+/* 옵션 영역 */
+.options {
+  margin-top: 16px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 14px;
+}
+
+.option label {
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.option input[type="number"],
+.option input[type="range"] {
+  width: 100%;
+  margin-top: 6px;
+}
+
+.option.checkbox {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+/* 압축 버튼 */
+.primary-btn {
+  margin-top: 18px;
+  width: 100%;
+  padding: 12px;
+  font-size: 15px;
+  font-weight: 700;
+  border: none;
+  background: #16a34a;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.primary-btn:hover {
+  background: #15803d;
+}
+
+/* 상태 텍스트 */
+.status {
+  margin-top: 8px;
+  font-size: 13px;
+  color: #555;
+}
+
+/* 결과 리스트 */
+.result-list {
+  margin-top: 12px;
+  font-size: 14px;
+}
+
+.result-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.result-item:last-child {
+  border-bottom: none;
+}
+
+.result-item .info div {
+  margin-bottom: 2px;
+  font-size: 13px;
+}
+
+/* 다운로드 버튼 */
+.download-btn {
+  padding: 8px 12px;
+  background: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.download-btn:hover {
+  background: #1e4fbb;
+}
+
+/* 광고 카드 */
+.ad-card {
+  border: 1px dashed #ccc;
+  background: #fffef7;
+}
+
+.ad-card h2 {
+  font-size: 16px;
+  margin-bottom: 8px;
+  color: #444;
+}
+
+.ad-placeholder {
+  margin-top: 6px;
+  padding: 20px;
+  background: #fefce8;
+  text-align: center;
+  color: #888;
+  font-size: 13px;
+  border-radius: 6px;
+}
+
+/* SEO 글 링크 */
+.seo-links ul {
+  list-style: disc;
+  padding-left: 20px;
+}
+
+.seo-links li {
+  margin-bottom: 6px;
+}
+
+.seo-links a {
+  text-decoration: none;
+  font-size: 14px;
+  color: #2563eb;
+}
+
+.seo-links a:hover {
+  text-decoration: underline;
+}
+
+/* guide-links 스타일 */
+.guide-links {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 14px;
+  padding: 10px 0;
+}
+
+.guide-links a {
+  text-decoration: none;
+  color: #2563eb;
+  margin: 0 8px;
+  transition: color 0.2s;
+}
+
+.guide-links a:hover {
+  color: #1e4fbb;
+  text-decoration: underline;
+}
+
+/* footer */
+.footer {
+  text-align: center;
+  padding: 20px 0;
+  font-size: 12px;
+  color: #666;
+}
+
+/* 넓은 화면에서 여백 살짝 업 */
+@media (min-width: 768px) {
+  .card {
+    padding: 24px 28px;
+  }
+}
