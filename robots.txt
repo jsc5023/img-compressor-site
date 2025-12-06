@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://img-compressor-site.vercel.app/sitemap.xml
