@@ -105,7 +105,7 @@ https://img-compressor-site.vercel.app/
 ## 📬 문의 / 피드백 (Contact)
 
 기능 제안 및 버그 제보:  
-https://github.com/jsc5023/img-compressor-site
+https://github.com/jsc5023/img-compressor-site/issues
 
 ---
 
